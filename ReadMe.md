@@ -45,7 +45,7 @@ Tips from the documentation and community best practices:
 
 ## Optional: Memory Bank Integration (Advanced)
 
-For long-lived or complex projects, you can include a **memory bank** folder that persists project state and context across sessions ([DataCamp][3]).
+For long-lived or complex projects, you can include a **memory bank** folder that persists project state and context across sessions.
 
 Example structure:
 
@@ -58,16 +58,7 @@ Example structure:
 └── progress.md
 ```
 
-These files help Cline retain architectural decisions, tech stack choices, and ongoing progress over time ([DataCamp][3]).
-
-## Example Workflow
-
-1. Write or update rule file under `.clinerules/`.
-2. Commit and push rules to your GitHub repo.
-3. Open project in VS Code and run Cline.
-4. Start a task—Cline will honor rules when planning and executing.
-5. Toggle rules on or off in UI as needed.
-6. Review subsequent file edits, documentation changes, test coverage, etc.
+These files help Cline retain architectural decisions, tech stack choices, and ongoing progress over time.
 
 ## Getting Started
 
@@ -78,10 +69,4 @@ These files help Cline retain architectural decisions, tech stack choices, and o
 * Open in VS Code and install the Cline extension.
 * Set your AI provider and API key in Cline settings.
 * Launch Cline and type `/newtask` to start using rules.
-
-## Useful Links & References
-
-* Official Cline rules documentation ([Cline][1])
-* DataCamp guide on both rules and memory bank features ([DataCamp][3])
-* Community tips for writing rules: the SPARC rules and Reddit insights ([GitHub][4], [reddit.com][5], [gist.github.com][6])
 

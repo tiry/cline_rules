@@ -30,3 +30,23 @@ At task completion:
 * Ensure all modified files are staged for commit.
 * Propose a **concise, informative commit message** summarizing the work done.
 * Let the user handle the actual `git push`.
+
+
+## Tidy up code
+
+When we rich the end of task implementation we need to check that we leave the code in a clean slate:
+
+ - remove any dead code or files
+ - check for duplicated code that could be shared
+
+## Definition of Done (DoD)
+
+A task is NOT complete until the following "Verification Loop" is green:
+
+1. **Linting:** Run `ruff check` on modified files.
+2. **Testing:** Run the specific test file associated with the change (e.g., `pytest tests/test_logic.py`).
+3. **Regressions:** If the change affects core logic, run the full suite.
+4. **Persistence:** If a test fails, you must attempt **at least 3 distinct hypotheses** before reporting an impasse.
+5. **No False Flags:** Never state "The task is done" if tests are failing. If you cannot fix a test, clearly state: "STALLED: [Reason] [Stack Trace]."
+
+If some tests are broken, we need to fix them before completing the task even is the work on this task is not the root cause of the tests failling.

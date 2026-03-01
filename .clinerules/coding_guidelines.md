@@ -1,9 +1,14 @@
 ## Coding Style
 
 * Keep code **modular** and well-structured
-* Avoid hardcoded values — define constants separately
-* Keep files and classes **under 500 lines**
+* Keep files and classes **under 200 lines** 
 * Favor **clarity and maintainability** over cleverness
+
+## Data files over hardcoding
+
+* Avoid hardcoded values — define constants separately
+* Do not embed JSON, XML, HTML fragments into code : externalize these as resouces files.
+* Ensure constants are not duplictaed between files
 
 ## Updating your knowledge
 
